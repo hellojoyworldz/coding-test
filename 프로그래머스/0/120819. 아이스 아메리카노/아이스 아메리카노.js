@@ -5,4 +5,10 @@ function solution(money) {
 }
 
 
+/**
+ * 제한사항 처리
+ * 문자 처리
+ * 콤마 처리
+ */
+
 
