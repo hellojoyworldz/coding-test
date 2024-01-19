@@ -11,3 +11,13 @@ function solution(n) {
     return answer;
 }
 solution(10)
+
+function solution2(n) {
+    var answer = 0;
+
+    answer = n%2===1 ? (n+1)/2*((n+1)/2) : n*(n+1)*(n+2)/6
+    
+    console.log(answer)
+    return answer;
+}
+solution2(10)
