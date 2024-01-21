@@ -8,3 +8,13 @@ function solution(my_string, k) {
 }
 
 solution('string',3)
+
+function solution2(my_string, k) {
+    var answer = '';
+    answer = my_string.repeat(k)
+    
+    console.log(answer)
+    return answer;
+}
+
+solution2('string',3)
