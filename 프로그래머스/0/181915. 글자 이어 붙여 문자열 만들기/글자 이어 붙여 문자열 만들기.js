@@ -3,7 +3,7 @@ function solution(my_string, index_list) {
   
   index_list.map((v)=>{
     console.log(v)
-    answer += [...my_string][v]
+    answer += my_string[v]
   })
 
   console.log(answer)
