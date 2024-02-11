@@ -1,0 +1,8 @@
+function solution(num_list, n) {
+    var answer = [];
+    
+    num_list.map((val, idx) => {
+        if(idx % n === 0 ) answer.push(val)
+    })
+    return answer;
+}
