@@ -1,0 +1,8 @@
+function solution(my_strings, parts) {
+    var answer = '';
+    
+    my_strings.map((v,i) => {
+        answer += v.slice(parts[i][0], parts[i][1]+1)
+    })
+    return answer;
+}
