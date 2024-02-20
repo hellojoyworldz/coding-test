@@ -13,8 +13,15 @@ function solution(my_string, s, e) {
             answer += val
         }
     })
-    
-
 
     return answer;
 }
+
+function solution2(my_string, s, e) {
+    var answer = ''
+
+    answer = my_string.slice(0,s) + my_string.slice(s,e+1).split('').reverse().join('') + my_string.slice(e+1,my_string.length)
+    
+    return answer;
+}
+solution2("Progra21Sremm3",6,12)
