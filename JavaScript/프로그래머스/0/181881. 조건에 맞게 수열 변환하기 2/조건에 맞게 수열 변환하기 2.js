@@ -15,3 +15,27 @@ function solution(arr) {
     
     return answer
 }
+
+function solution2(arr) {
+    var answer = 0;
+    var copy = []
+
+    let red  = [3,4,3]
+
+    while(!arr.every((v,i) => v === copy[i])){
+        copy = [...arr]
+        arr = arr.map(val => {
+            if(val >= 50 && val % 2 === 0) return val / 2
+            else if(val < 50 && val % 2 !== 0) return val * 2 + 1
+            else return val
+        })
+        
+        answer ++
+        
+    }
+
+    console.log(answer-1)
+    return answer-1
+}
+
+solution2([1, 2, 3, 100, 99, 98])
