@@ -1,7 +1,8 @@
 function solution(n) {
     var answer = 0;
     
-    for(var i=1; i <= n;i++){
+    var i =1
+    while(i++){
         if(n % i === 1){
             answer = i
             break
