@@ -8,8 +8,5 @@ function solution(arr) {
         answer = arr.filter(val => val !== min)
     }
     
-    
-    
-    
     return answer
 }
