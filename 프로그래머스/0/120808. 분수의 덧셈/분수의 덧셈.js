@@ -11,10 +11,10 @@ function solution(numer1, denom1, numer2, denom2) {
     }
     
     let len = ary.length
-    answer = ary.length === 0 ? [numer, denom] : [numer/ary[len-1], denom/ary[len-1]]
+    if(ary.length === 0) answer = [numer, denom]
+    else answer = [numer/ary[len-1], denom/ary[len-1]]
  
     
     return answer;
 }
-
 
