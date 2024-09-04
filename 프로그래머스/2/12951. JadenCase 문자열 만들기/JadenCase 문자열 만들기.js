@@ -9,12 +9,14 @@ function solution(s) {
         
         if(idx === 0 && isNaN(word)){
             answer += word.toUpperCase()
-        }else{
+        }else if(word !== word.toLowerCase()){
             answer += word.toLowerCase()
+        }else{
+            answer += word
         }
+        
         idx++
     }
     
-    console.log(answer)
     return answer;
 }
