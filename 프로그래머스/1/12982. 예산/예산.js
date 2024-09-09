@@ -9,7 +9,7 @@ function solution(d, budget) {
         if(hap <= budget){
             answer+=1
         }else if(hap > budget){
-            hap -=ary[i]
+           break
         }
         
     }
