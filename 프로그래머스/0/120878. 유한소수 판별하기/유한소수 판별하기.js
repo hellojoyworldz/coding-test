@@ -1,7 +1,6 @@
 function solution(a, b) {
     var answer = 0;
     
-    if(a === b) return 2;
     if(a % b === 0) return 1;
     
     var max = 1;
@@ -15,19 +14,14 @@ function solution(a, b) {
     while(b % 5 === 0) b/=5
 
     answer = b === 1 ? 1 : 2
-    
     return answer
-    
-    
 }
 
 function solution2(a, b) {
     var answer = 0;
     var max = 1;
     
-    if(a === b) return 2;
     if(a % b === 0) return 1;
-    
     
     for(var i=1; i <= Math.min(a,b); i++){
         if(a%i === 0 && b%i === 0){
@@ -35,9 +29,7 @@ function solution2(a, b) {
         }
     }
     
-    a /= max
     b /= max
-
     
     while(true){
         if(b %2 === 0 ){
@@ -55,7 +47,5 @@ function solution2(a, b) {
         }
     }
     
-     return answer
-    
-    
+     return answer  
 }
