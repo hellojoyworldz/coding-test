@@ -1,15 +1,15 @@
 function solution(num, total) {
     var answer = [];
-    var na = total % num
-    var mo = Math.ceil(total / num)
-    var ea = Math.floor(num/2)
+    var remainder = total % num
+    var quotient = Math.ceil(total / num)
+    var halfFloor = Math.floor(num/2)
     
-    if(na === 0){
-        for(var i=mo-ea;  i<=mo+ea; i++){
+    if(remainder === 0){
+        for(var i=quotient-halfFloor;  i<=quotient+halfFloor; i++){
             answer.push(i)
         }
     }else{
-        for(var i=mo-na; i<na+mo; i++){
+        for(var i=quotient-remainder; i<quotient+remainder; i++){
             answer.push(i)
         }
     }
