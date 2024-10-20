@@ -1,15 +1,18 @@
 function solution(k, score) {
     let answer = [];
     let arr = [];
+    
+    function addSort(s){
+        arr.push(s);
+        arr.sort((a, b) => b-a);
+    }
 
     score.map((s) => {
         if (arr.length != k) {
-            arr.unshift(s);
-            arr.sort((a, b) => b-a);
+            addSort(s)
             answer.push(arr.at(-1));
         } else {
-            arr.unshift(s);
-            arr.sort((a, b) => b-a);
+            addSort(s)
             arr.pop();
             answer.push(arr.at(-1));
         }
